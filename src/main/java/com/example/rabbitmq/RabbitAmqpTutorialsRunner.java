@@ -18,6 +18,6 @@ public class RabbitAmqpTutorialsRunner implements CommandLineRunner {
         System.out.println("Ready ... running for " + duration + "ms");
         Thread.sleep(duration);
         System.out.println("Closing context");
-//        ctx.close();
+        ctx.close();
     }
 }

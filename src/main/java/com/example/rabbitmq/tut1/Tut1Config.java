@@ -25,5 +25,5 @@ public class Tut1Config {
     public Tut1Sender sender() {
         return new Tut1Sender();
     }
-    
+
 }
