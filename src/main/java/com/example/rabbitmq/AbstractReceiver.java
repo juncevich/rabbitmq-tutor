@@ -2,7 +2,7 @@ package com.example.rabbitmq;
 
 import org.springframework.util.StopWatch;
 
-public abstract class AbstractReciever {
+public abstract class AbstractReceiver {
     protected void receive(String in, int receiver) throws InterruptedException {
         StopWatch watch = new StopWatch();
         watch.start();

@@ -1,9 +1,9 @@
 package com.example.rabbitmq.tut4;
 
-import com.example.rabbitmq.AbstractReciever;
+import com.example.rabbitmq.AbstractReceiver;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
-public class Tut4Receiver extends AbstractReciever {
+public class Tut4Receiver extends AbstractReceiver {
 
     @RabbitListener(queues = "#{autoDeleteQueue1.name}")
     public void receive1(String in) throws InterruptedException {
