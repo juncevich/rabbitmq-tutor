@@ -14,14 +14,6 @@ public class Tut3Receiver extends AbstractReciever {
     public void receive2(String in) throws InterruptedException {
         receive(in, 2);
     }
-
-
-    protected void doWork(String in) throws InterruptedException {
-        for (char ch : in.toCharArray()) {
-            if (ch == '.') {
-                Thread.sleep(1000);
-            }
-        }
-    }
+    
 
 }

@@ -16,12 +16,4 @@ public class Tut4Receiver extends AbstractReciever {
     }
 
 
-    protected void doWork(String in) throws InterruptedException {
-        for (char ch : in.toCharArray()) {
-            if (ch == '.') {
-                Thread.sleep(1000);
-            }
-        }
-    }
-
 }

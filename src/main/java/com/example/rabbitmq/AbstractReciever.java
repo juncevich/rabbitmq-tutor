@@ -13,5 +13,13 @@ public abstract class AbstractReciever {
                 watch.getTotalTimeSeconds() + "s");
     }
 
-    protected abstract void doWork(String in) throws InterruptedException;
+    private void doWork(String in) throws InterruptedException {
+        for (char ch : in.toCharArray()) {
+            if (ch == '.') {
+                Thread.sleep(1000);
+            }
+        }
+    }
+    
+    
 }
